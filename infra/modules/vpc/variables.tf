@@ -28,3 +28,15 @@ variable "tags" {
   description = "Tags to apply to resources"
   default     = {}
 }
+
+variable "private_subnet_cidr_2" {
+  type        = string
+  description = "CIDR block for the second private subnet"
+  default     = "10.0.3.0/24"
+}
+
+variable "private_subnet_az" {
+  type        = string
+  description = "Availability zone for the second private subnet"
+  default     = "us-east-1b"
+}
